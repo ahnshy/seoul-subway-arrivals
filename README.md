@@ -1,4 +1,4 @@
-# 📦 seoul-subway-arrivals
+# 🚇 seoul-subway-arrivals
 Next.js-based web app for **Current Location → Pick a Subway Station → Show real-time arrivals (up & down directions)** on **Google Maps**.<br/>
 ✅ Tested on Windows 10/11 · Node 18+ · Next.js 15<br/><br/>
 
