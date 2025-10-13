@@ -1,8 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import ThemeRegistry from './ThemeRegistry'
 
-export const metadata: Metadata = { title:'Seoul Subway Arrivals (Google Maps)', description:'현재 위치 기준, 서울 지하철 역 실시간 도착 정보' }
+export const metadata: Metadata = { title:'seoul-subway-arrivals', description:'Current location → pick station → real-time arrivals (Seoul Subway)' }
 
 export default function RootLayout({ children }: { children: React.ReactNode }){
-  return (<html lang='ko'><body>{children}</body></html>)
+  return (<html lang='ko'><body><ThemeRegistry>{children}</ThemeRegistry></body></html>)
 }
