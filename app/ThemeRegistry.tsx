@@ -61,8 +61,8 @@ export const ThemeContext = React.createContext<{ mode: Mode; setMode: (m: Mode)
 
 export default function ThemeRegistry({ children }: { children: React.ReactNode }) {
   const [mode, setMode] = React.useState<Mode>(() => {
-    const saved = typeof window !== 'undefined' ? (window.localStorage.getItem('theme-mode') as Mode) : 'light'
-    return saved || 'light'
+    const saved = typeof window !== 'undefined' ? (window.localStorage.getItem('theme-mode') as Mode) : 'night'
+    return saved || 'night'
   })
   React.useEffect(() => {
     window.localStorage.setItem('theme-mode', mode)
